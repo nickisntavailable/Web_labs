@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="портфолио, веб, лабы">
+    <title>Даниил Колесников</title>
+</head>
+<body>
+    <header>
+        <h1>Колесников Даниил М33091</h1>
+        <nav>
+            <a href="#">kolesnikov43452@gmail.com</a>
+            <a href="#">nickisntavailable</a>
+            <a href="#">89218752186</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <!-- обо мне h2, p,  time-->
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Даня и я студент университета ИТМО по направлению программирование и интернет-технологии. Интересный факт обо мне - я  родился <time datetime="1997-06-10T21:45">10 июня в 21:45</time> </p> 
+            <!-- список жизненных достижений ul, del, ins-->
+            <h3>Список моих достижений</h3>
+            <ul>
+                <li><del>Построить дом</del></li>
+                <li><del>Родить сына</del></li>
+                <li>Посадить дерево</li>
+                <li>Учеба в 2 университетах</li>
+            </ul>
+        </section>
+        <section id="code">
+            <!-- фрагмент нестыдного кода  pre, code -->
+            <h2>Немного про мой код и где найти</h2>
+            <pre>
+                <code>
+                    function createAnalytics() {
+                        let counter = 0;
+                        let isDestroyed = false;
+                    
+                        let listener = () => counter++;
+                        document.addEventListener('click', listener);
+                        
+                        return {
+                            destroy() {
+                                document.removeEventListener('click', listener);
+                                isDestroyed = true;
+                            },
+                    
+                            getClicks() {
+                                if(isDestroyed) {
+                                    return 'Analytics is destroyed';
+                                }
+                                return counter;
+                            }
+                        }
+                    }
+                    window.analytics = createAnalytics();
+                </code>
+            </pre>
+            <!-- git repo где можно посмотреть другие работы a,  -->
+            <div>
+                <p>А вот здесь можно найти <b>github</b> репозитории, где есть побольше кода</p>
+                <button>Нажми меня</button>
+            </div>
+        </section>
+        <section id="additional">
+            <!-- тотемное животное -->
+            <div class="animal">
+                <h2>Мудрость и коты</h2>
+                <p>В истории котам всегда приписывается мудрость. Можно сказать, что это слова - синонимы. Однако, на деле все бывает иначе. Поэтому здесь будет просто кот и мудрость. Рядом. Но не вместе.</p>
+                <pre>
+                /\_/\
+                _(o o)_
+            )) ( _/^\_ )
+            ((   )  ^  (
+            )) (         )
+            (( (  ||  ||   )
+            (((   ||  ||   )
+              \\_=||__||=_/
+                </pre>
+            </div>
+            <!-- жизненные мудрости и формула успеха -->
+            <blockquote>
+                <p>Просто жить, пока не умрешь, — уже тяжелая работа.</p>
+                <cite>Буковски</cite>
+            </blockquote>
+        </section>
+    </main>
+    <footer>
+        <p>Подвал сайта. Здесь могла быть Ваша реклама.</p>
+    </footer>
+</body>
+</html>
