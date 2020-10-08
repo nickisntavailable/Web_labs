@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="портфолио, веб, лабы">
     <title>Даниил Колесников</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Колесников Даниил М33091</h1>
         <nav>
-            <a href="mailto:kolesnikov43452@gmail.com">kolesnikov43452@gmail.com</a>
-            <a href="https://github.com/nickisntavailable/Web_labs">nickisntavailable</a>
+            <a id="first" href="mailto:kolesnikov43452@gmail.com">kolesnikov43452@gmail.com</a>
+            <a id="second" href="https://github.com/nickisntavailable/Web_labs">nickisntavailable</a>
             <a href="tel:89218752186">89218752186</a>
         </nav>
     </header>
     <main>
         <section id="about">
             <!-- обо мне h2, p,  time-->
+            
             <h2>Обо мне</h2>
             <p>Привет! Меня зовут Даня и я студент университета ИТМО по направлению программирование и интернет-технологии. Интересный факт обо мне - я  родился <time datetime="1997-06-10T21:45">10 июня в 21:45</time> </p> 
+            
+            
+        </section>
+        <section id="achievements">
             <!-- список жизненных достижений ul, del, ins-->
-            <h3>Список моих достижений</h3>
+            <h2>Список моих достижений</h2>
             <ul>
                 <li><del>Построить дом</del></li>
                 <li><del>Родить сына</del></li>
@@ -34,28 +42,28 @@
             <h2>Немного про мой код и где найти</h2>
             <pre>
                 <code>
-                    function createAnalytics() {
-                        let counter = 0;
-                        let isDestroyed = false;
-                    
-                        let listener = () => counter++;
-                        document.addEventListener('click', listener);
-                        
-                        return {
-                            destroy() {
-                                document.removeEventListener('click', listener);
-                                isDestroyed = true;
-                            },
-                    
-                            getClicks() {
-                                if(isDestroyed) {
-                                    return 'Analytics is destroyed';
-                                }
-                                return counter;
-                            }
-                        }
-                    }
-                    window.analytics = createAnalytics();
+function createAnalytics() {
+    let counter = 0;
+    let isDestroyed = false;
+
+    let listener = () => counter++;
+    document.addEventListener('click', listener);
+    
+    return {
+        destroy() {
+            document.removeEventListener('click', listener);
+            isDestroyed = true;
+        },
+
+        getClicks() {
+            if(isDestroyed) {
+                return 'Analytics is destroyed';
+            }
+            return counter;
+        }
+    }
+}
+window.analytics = createAnalytics();
                 </code>
             </pre>
             <!-- git repo где можно посмотреть другие работы a,  -->
@@ -81,10 +89,10 @@
                 </pre>
             </div>
             <!-- жизненные мудрости и формула успеха -->
-            <blockquote>
-                <p>Просто жить, пока не умрешь, — уже тяжелая работа.</p>
-                <cite>Буковски</cite>
-            </blockquote>
+            <div class="blockquote">
+                <p>"Просто жить, пока не умрешь, — уже тяжелая работа."</p>
+                <p>Буковски</p>
+            </div>
         </section>
     </main>
     <footer>
