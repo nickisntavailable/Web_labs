@@ -4,4 +4,4 @@
 Макет сайта первая версия:
 ![макет сайта](lab1/maket.png)
 Макет сайта update:
-![макет сайта](lab2/maket_updated.png)
+![макет сайта](lab2/maket_updated.jpg)
