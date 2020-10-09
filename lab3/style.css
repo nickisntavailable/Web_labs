@@ -108,7 +108,11 @@ section {
     align-items: center;
     justify-content: center;
 }
-
+#code pre {
+    width: 600px;
+    padding: 15px;
+    border: 3px dashed #FFC340;
+}
 #code code {
     font-family: 'Courier Prime', monospace;
     font-size: 13px;
