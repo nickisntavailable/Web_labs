@@ -78,7 +78,7 @@ section {
 /* about */
 #about {
     background-color: #5dbcc9;
-    background-image: url(/lab2/face.svg);
+    background-image: url(/lab3/assets/face.svg);
     background-position: 80% 50%;
     background-repeat: no-repeat;
 }
@@ -95,7 +95,7 @@ section {
 /* achievements */
 #achievements {
     background-color: #33CDC7;
-    background-image: url(/lab2/list.svg);
+    background-image: url(/lab3/assets/list.svg);
     background-position: 10% 50%;
     background-repeat: no-repeat;
     background-size: 15%;
@@ -180,6 +180,20 @@ section {
     font-size: 29px;
     font-style: italic;
     text-align: right;
+}
+
+#travel {
+    background-color: #5dbcc9;
+}
+#travel div {
+    margin-top: 20px;
+}
+#travel img {
+    /* display: block; */
+    height: 300px;
+    float: left;
+    margin-right: 30px;
+
 }
 /* footer */
 footer {
