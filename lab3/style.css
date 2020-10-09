@@ -192,8 +192,11 @@ section {
     /* display: block; */
     height: 300px;
     float: left;
-    margin-right: 30px;
+    padding: 20px;
 
+}
+#travel .clear {
+    clear: both;
 }
 /* footer */
 footer {
