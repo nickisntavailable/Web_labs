@@ -127,6 +127,7 @@ section {
     border: none;
     outline: none;
     margin: 15px;
+    cursor: pointer;
 }
 #code div button:hover {
     background-color: #BF5C54;
