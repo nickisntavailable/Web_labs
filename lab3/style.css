@@ -10,9 +10,12 @@ body {
 }
 
 header {
-    background-color: #ffc342;
+    background-color: #FFC340;
     min-height: 154px;
-    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
 }
 header h1 {
     font-size: 36px;
@@ -73,19 +76,39 @@ section {
     font-size: 29px;
     line-height: 35px;
 }
-#achievements ul {
-    margin-left: 30px;
-}
 #achievements {
     background-color: #33CDC7;
     background-image: url(/lab2/list.svg);
-    background-position: 80% 50%;
+    background-position: 10% 50%;
     background-repeat: no-repeat;
     background-size: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
+#achievements h2 {
+    width: 630px;
+}
+#achievements ul {
+    margin-left: 30px;
+}
+
 #code {
     background-color: #5dbcc9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+#code div {
+    width: 50%;
+}
+#code .half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #code code {
     font-family: 'Courier Prime', monospace;
     font-size: 13px;
@@ -93,6 +116,7 @@ section {
 #code div p {
     font-size: 29px;
 }
+
 #code div button {
     width: 250px;
     height: 90px;
@@ -110,7 +134,18 @@ section {
 }
 #additional {
     background-color: #33CDC7;
+    display: flex;
+    flex-wrap: wrap;
 }
+#additional div {
+    width: 50%;
+}
+#additional .cat {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 #additional .blockquote {
     padding: 20px;
 }
