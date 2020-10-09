@@ -92,6 +92,7 @@ section {
 }
 #code div p {
     font-size: 29px;
+    padding: 10px 20px;
 }
 #code div button {
     width: 250px;
@@ -102,11 +103,16 @@ section {
     color: #fff;
     border: none;
     outline: none;
-    margin: 15px;
+    margin: 20px;
 }
 #code div button:hover {
     background-color: #BF5C54;
     color: rgb(209, 208, 208);
+}
+#code pre {
+    width: 600px;
+    padding: 15px;
+    border: 3px dashed #FFC340;
 }
 #additional {
     background-color: #33CDC7;
@@ -114,14 +120,15 @@ section {
 #additional .blockquote {
     padding: 20px;
 }
-#additional .animal p {
-    padding: 20px;
+#additional .animal pre {
+    font-size: 29px;
 }
 #additional .blockquote p {
     width: 550px;
     font-size: 29px;
     font-style: italic;
     text-align: right;
+    padding-bottom: 20px;
 }
 footer {
     min-height: 100px;
