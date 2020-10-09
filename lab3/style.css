@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -42,16 +44,31 @@ header a {
     padding: 15px 0 15px 35px;
 }
 header nav a::before{
-    content: " ";
+    content: "";
     display: inline-block;
     position: relative;
-    top: 10px;
-    left: -5px;
     background-color:#FF4E40;
     height: 35px;
     width: 35px;
     border-radius: 50%;
+    margin: 5px;
 }
+header nav a#first::before {
+    content: "\f199";
+    font-family: FontAwesome;
+    text-align: center;
+}
+header nav a#second::before {
+    content: "\f113";
+    font-family: FontAwesome;
+    text-align: center;
+}
+header nav a#third::before {
+    content: "\f095";
+    font-family: FontAwesome;
+    text-align: center;
+}
+
 
 /* sections part */
 section {
