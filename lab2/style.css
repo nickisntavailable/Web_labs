@@ -32,7 +32,6 @@ header h1::before{
     border-radius: 50%;
 }
 
-
 header a {
     text-decoration: none;
     color: white;
@@ -52,11 +51,12 @@ header nav a::before{
     border-radius: 50%;
 }
 
-
+/* sections part */
 section {
     min-height: 464px;
     padding: 60px 80px;
 }
+/* about */
 #about {
     background-color: #5dbcc9;
     background-image: url(/lab2/face.svg);
@@ -73,6 +73,7 @@ section {
     font-size: 29px;
     line-height: 35px;
 }
+/* achivements */
 #achievements ul {
     margin-left: 30px;
 }
@@ -83,6 +84,7 @@ section {
     background-repeat: no-repeat;
     background-size: 15%;
 }
+/* code */
 #code {
     background-color: #5dbcc9;
 }
@@ -114,6 +116,7 @@ section {
     padding: 15px;
     border: 3px dashed #FFC340;
 }
+/* additional */
 #additional {
     background-color: #33CDC7;
 }
@@ -130,6 +133,7 @@ section {
     text-align: right;
     padding-bottom: 20px;
 }
+/* footer */
 footer {
     min-height: 100px;
     background-color: #D9D9D9;
