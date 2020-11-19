@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="портфолио, веб, лабы">
+    <title>Даниил Колесников</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Колесников Даниил М33091</h1>
+        <nav>
+            <a id="first" href="mailto:kolesnikov43452@gmail.com"> kolesnikov43452@gmail.com</a>
+            <a id="second" href="https://github.com/nickisntavailable/Web_labs">nickisntavailable</a>
+            <a id="third" href="tel:89218752186">89218752186</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <!-- обо мне h2, p,  time-->
+            
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Даня и я студент университета ИТМО по направлению программирование и интернет-технологии. Интересный факт обо мне - я  родился <time datetime="1997-06-10T21:45">10 июня в 21:45</time> </p> 
+            
+            
+        </section>
+        <section id="achievements">
+            <!-- список жизненных достижений ul, del, ins-->
+            <div class="half">
+                <h2>Список моих достижений</h2>
+            <ul>
+                <li><del>Учеба в 2 университетах</del></li>
+                <li><del>Посадить дерево</del></li>
+                <li>Построить дом</li>
+                <li>Родить сына</li>
+            </ul>
+        </section>
+        <section id="code">
+            <!-- фрагмент нестыдного кода  pre, code -->
+            <div>
+                <h2>Немного про мой код и где его найти</h2>
+                <pre>
+                    <code>
+function createAnalytics() {
+    let counter = 0;
+    let isDestroyed = false;
+
+    let listener = () => counter++;
+    document.addEventListener('click', listener);
+    
+    return {
+        destroy() {
+            document.removeEventListener('click', listener);
+            isDestroyed = true;
+        },
+
+        getClicks() {
+            if(isDestroyed) {
+                return 'Analytics is destroyed';
+            }
+            return counter;
+        }
+    }
+}
+window.analytics = createAnalytics();
+                    </code>
+                </pre>
+            </div>
+            
+            <!-- git repo где можно посмотреть другие работы a,  -->
+            <div class="half">
+                <p>А вот здесь можно найти <b>github</b> репозитории, где есть побольше кода</p>
+                <a href="https://github.com/nickisntavailable/Web_labs"><button>Нажми меня</button></a>
+            </div>
+        </section>
+        <section id="additional">
+            <!-- тотемное животное -->
+            <div class="animal">
+                <h2>Мудрость и коты</h2>
+                <p>В истории котам всегда приписывается мудрость. Можно сказать, что это слова - синонимы. Однако, на деле все бывает иначе. Поэтому здесь будет просто кот и мудрость. Рядом. Но не вместе.</p>
+            </div>
+            <div class="cat">
+                <pre>
+        /\_/\
+       _(o o)_
+))    ( _/^\_ )
+((     )  ^  (
+))   (         )
+((  (  ||  ||   )
+(( (   ||  ||   )
+   \\_=||__||=_/
+                </pre>
+            </div>
+                
+            
+            <!-- жизненные мудрости и формула успеха -->
+            <div class="blockquote">
+                <p>"Просто жить, пока не умрешь, — уже тяжелая работа."</p>
+                <p>Буковски</p>
+            </div>
+        </section>
+        <section id="travel">
+            <h2>Места, где бы я хотел побывать</h2>
+            <div>
+                <img src="assets/321.jpg" alt="turkey" class="pop">
+                <img src="assets/b13c679f7__1500x0__q85.jpg" alt="venice" class="pop">
+                <img src="assets/main_0.jpg" alt="stonehange" class="pop">
+                <p>Текст, чтобы показать, что используется свойство float:left. Без него получается, что такст окажется под картинками. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab qui repellendus tempora? Placeat, autem dolore harum facere earum veniam similique dolorem, tempora eum saepe magni laboriosam inventore maxime sapiente.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Подвал сайта. Здесь могла быть Ваша реклама.</p>
+        <button class="contact_btn">Контакты</button>
+    </footer>
+
+    <div class="modal">
+        <span class="close"></span>
+        <h2>Мои контакты</h2>
+        <p>Вы всегда можете связаться со мной одним из указанных способов</p>
+        <ul>
+            <li>
+                <p>Почта:</p>
+                <a id="first" href="mailto:kolesnikov43452@gmail.com"> kolesnikov43452@gmail.com</a>
+            </li>
+            <li>
+                <p>Github:</p>
+                <a id="second" href="https://github.com/nickisntavailable/Web_labs">nickisntavailable</a>
+            </li>
+            <li>
+                <p>Телефон:</p>
+                <a id="third" href="tel:89218752186">89218752186</a>
+            </li>
+        </ul> 
+    </div>
+    <div class="overlay"></div>
+    <!-- <script src="myscript.js"></script> -->
+    <script src="modals.js"></script>
+</body>
+</html>
