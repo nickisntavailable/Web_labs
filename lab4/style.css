@@ -1,0 +1,211 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: #FFC340;
+    min-height: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+header h1 {
+    font-size: 36px;
+    line-height: 54px;
+    padding: 30px 0;
+    padding-left: 15px;
+}
+header h1::before{
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: -5px;
+    background-color:#FF4E40;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    line-height: 35px;
+    padding: 15px 0 15px 35px;
+}
+header nav a::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    background-color:#FF4E40;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 5px;
+}
+header nav a#first::before {
+    content: "\f199";
+    font-family: FontAwesome;
+    text-align: center;
+}
+header nav a#second::before {
+    content: "\f113";
+    font-family: FontAwesome;
+    text-align: center;
+}
+header nav a#third::before {
+    content: "\f095";
+    font-family: FontAwesome;
+    text-align: center;
+}
+
+
+/* sections part */
+section {
+    min-height: 464px;
+    padding: 60px 80px;
+}
+/* about */
+#about {
+    background-color: #5dbcc9;
+    background-image: url(assets/face.svg);
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+}
+#about  h2, #achievements h2, #code h2, #additional h2 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+#about  p, #achievements ul, #additional p {
+    width: 600px;
+    font-size: 29px;
+    line-height: 35px;
+}
+/* achievements */
+#achievements {
+    background-color: #33CDC7;
+    background-image: url(assets/list.svg);
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#achievements h2 {
+    width: 630px;
+}
+#achievements ul {
+    margin-left: 30px;
+}
+/* code */
+#code {
+    background-color: #5dbcc9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#code div {
+    width: 50%;
+}
+#code .half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#code pre {
+    width: 600px;
+    padding: 15px;
+    border: 3px dashed #FFC340;
+}
+#code code {
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+}
+#code div p {
+    font-size: 29px;
+}
+
+#code div button {
+    width: 250px;
+    height: 90px;
+    background-color: #FF4E40;
+    border-radius: 25px;
+    font-size: 29px;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 15px;
+    cursor: pointer;
+}
+#code div button:hover {
+    background-color: #BF5C54;
+    color: rgb(209, 208, 208);
+}
+/* additional */
+#additional {
+    background-color: #33CDC7;
+    display: flex;
+    flex-wrap: wrap;
+}
+#additional div {
+    width: 50%;
+}
+#additional .cat {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#additional .blockquote {
+    padding: 20px;
+}
+#additional .animal p {
+    padding: 20px;
+}
+#additional .blockquote p {
+    width: 550px;
+    font-size: 29px;
+    font-style: italic;
+    text-align: right;
+}
+
+#travel {
+    background-color: #5dbcc9;
+}
+#travel div {
+    margin-top: 20px;
+}
+#travel img {
+    /* display: block; */
+    height: 300px;
+    float: left;
+    padding: 20px;
+
+}
+#travel .clear {
+    clear: both;
+}
+/* footer */
+footer {
+    min-height: 100px;
+    background-color: #D9D9D9;
+}
+footer p {
+    font-size: 29px;
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+}
