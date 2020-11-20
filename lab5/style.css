@@ -247,10 +247,11 @@ footer button:hover {
     cursor: pointer;
 }
 
-.modal {
+.modal, .modal_img, .modal_ul {
+    display: none;
     position: fixed;
-    width: 35%;
-    min-height: 40%;
+    width: 50%;
+    min-height: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -259,19 +260,34 @@ footer button:hover {
     padding: 80px 40px 30px;
     text-align: center;
     font-size: 20px;
-    visibility: hidden;
+    /* visibility: hidden; */
     z-index: 2;
 }
-/* .modal .hidden {
-    visibility: hidden;
-} */
+.modal_img {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.modal_img.pop1 {
+    background-image: url(assets/321.jpg);
+}
+.modal_img.pop2 {
+    background-image: url(assets/b13c679f7__1500x0__q85.jpg);
+}
+.modal_img.pop3 {
+    background-image: url(assets/main_0.jpg);
+}
+.modal.active, .modal_img.active, .modal_ul.active {
+    display: block;
+}
 .modal h1 {
     font-size: 30px;
 }
 .modal p {
     margin-top: 15px;
 }
-.modal ul {
+.modal ul, .modal_ul ul {
     text-align: left;
     margin: 15px 0 0 30px;
     list-style: none;
@@ -300,7 +316,7 @@ footer button:hover {
     color: #fc6257;
 }
 
-.modal .close {
+.modal .close , .modal_img .close, .modal_ul .close{
     position: absolute;
     right: 32px;
     top: 32px;
@@ -308,10 +324,10 @@ footer button:hover {
     height: 32px;
     opacity: 0.5;
     }
-.modal .close:hover {
+.modal .close:hover, .modal_img .close:hover, .modal_ul .close:hover {
     opacity: 1;
 }
-.modal .close:before, .modal .close:after {
+.modal .close:before, .modal .close:after, .modal_img .close:before, .modal_img .close:after, .modal_ul .close:before, .modal_ul .close:after {
     position: absolute;
     left: 15px;
     content: ' ';
@@ -319,10 +335,10 @@ footer button:hover {
     width: 5px;
     background-color: #fc6257;
 }
-.modal .close:before {
+.modal .close:before, .modal_img .close:before, .modal_ul .close:before {
     transform: rotate(45deg);
 }
-.modal .close:after {
+.modal .close:after, .modal_img .close:after, .modal_ul .close:after {
     transform: rotate(-45deg);
 }
 
@@ -336,4 +352,7 @@ footer button:hover {
     background-color: #000;
     opacity: 0.8;
     visibility: hidden;
+}
+.overlay.active{
+    visibility: visible;
 }

@@ -58,29 +58,7 @@ let quickSort = (items, left, right) => {
 
 
 
-function countU(un, sel) {
-    let counts = {};
-    for(i = 0; i < un.length - 1; i++) {
-        let cnt = 0;
-        for(j = 0; j < sel.length - 1; j++) {
-            if (un[i] == sel[j]) cnt++;
-        }
-        counts[un[i]] = cnt;
-    }
-    return counts;
-}
 
-function unique(arr) {
-    let result = [];
-  
-    for (let str of arr) {
-      if (!result.includes(str)) {
-        result.push(str);
-      }
-    }
-  
-    return result;
-}
 
 console.log('Lab5 started');
 
@@ -88,24 +66,14 @@ let arr = [];
 for(i=0; i<1000; i++) {
     arr.push(getRandom(1000));
 }
-console.log(arr.length);
-console.log(getMax(arr), Math.max(...arr));
+console.log('array : ' + arr);
+console.log('max: ' + getMax(arr), Math.max(...arr));
 
-console.log(getMin(arr), Math.min(...arr));
-console.log(quickSort(arr, 0, arr.length-1));
-
-
-
-let sels = [];
-document.querySelectorAll('*').forEach((elem) => {
-    sels.push(elem.localName);
-});
-console.log(sels.length);
+console.log('min: ' + getMin(arr), Math.min(...arr));
+console.log('quick sort: ' + quickSort(arr, 0, arr.length-1));
 
 
-let un = unique(sels);
-console.log(un.length);
 
 
-let counts = countU(un, sels);
-console.log(counts);
+
+
